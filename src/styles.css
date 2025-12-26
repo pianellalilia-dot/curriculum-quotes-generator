@@ -54,6 +54,7 @@ form .input-button {
   border-radius: 20px;
   padding: 14px 24px;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 form .input-button:hover {
   background: #4d6a61;
@@ -62,11 +63,11 @@ form .input-button:hover {
 main .generated-answer {
   background: white;
   padding: 30px;
-  line-height: 1.5;
+  line-height: 2;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 25px;
-  border-left: 2px solid #4d6a61;
+  border-left: 3px solid #4d6a61;
 }
 main .inpiredFromSomeone {
   font-size: 14px;
