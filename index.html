@@ -21,18 +21,21 @@
       </header>
 
       <main>
-        <form id="input-user">
-          <input
-            type="text"
-            class="input-key-words"
-            id="input-key-words"
-            placeholder="Write here your key words, e.g: peace, action, tech"
-            autofocus
-            required
-            \
-          />
-          <input type="submit" value="Create" class="input-button" />
-        </form>
+        <div class="form-container">
+          <form id="input-user">
+            <input
+              type="text"
+              class="input-key-words"
+              id="input-key-words"
+              placeholder="Key-words to include in the quote"
+              autofocus
+              required
+              \
+            />
+            <input type="submit" value="Create" class="input-button" />
+          </form>
+          <div class="hint">i.e.: yourself, taken, ✨</div>
+        </div>
         <div class="generated-answer" id="generated-quote">
           “Be yourself; everyone else is already taken.”
           <br />

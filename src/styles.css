@@ -6,6 +6,20 @@ body {
 a {
   color: #2c3d37;
 }
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 body .container {
   max-width: 600px;
   margin: 120px auto;
@@ -26,14 +40,19 @@ h1 {
   line-height: 1.5;
   color: #272044;
 }
-form {
+
+.form-container {
+  margin-bottom: 20px;
   padding: 30px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  display: flex;
-  margin-bottom: 20px;
 }
+
+form {
+  display: flex;
+}
+
 form .input-key-words {
   background: #d7eddb;
   width: 80%;
@@ -60,17 +79,25 @@ form .input-button:hover {
   background: #4d6a61;
   color: white;
 }
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
 main .generated-answer {
   background: white;
   padding: 20px;
   line-height: 2;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  margin-bottom: 25px;
   border-left: 3px solid #4d6a61;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
+  margin-top: 25px;
 }
