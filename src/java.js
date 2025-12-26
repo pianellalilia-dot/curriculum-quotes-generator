@@ -1,6 +1,10 @@
 function displayQuote(response) {
-  let generatedQuote = document.querySelector("#generated-quote");
-  generatedQuote.innerHTML = response.data.answer;
+  new Typewriter("#generated-quote", {
+    strings: response.data.answer,
+    autoStart: true,
+    delay: 40,
+    cursor: "",
+  });
 }
 
 function generateQuote(keyWords) {
